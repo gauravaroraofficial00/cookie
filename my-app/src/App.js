@@ -4,26 +4,14 @@ import './App.css';
 
 function App() {
   useEffect(() => { // Correct usage of useEffect
+    console.log("🚀 ~ file: App.js:8 ~ useEffect ~ document.cookie:", document.cookie)
     console.log(document.cookie); // This will log all cookies accessible to this domain
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <h1>
+      NEw page
+    </h1>
   );
 }
 
